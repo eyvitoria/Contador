@@ -1,0 +1,68 @@
+Contador
+Informe uma data
+DD/MM/AAAA
+Iniciar contagem
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        @font-face {
+            font-family: 'roboto';
+            src: url('roboto/Roboto-Regular.ttf') format('truetype');
+        }
+        body{
+            background-color: #000000;
+            font-family: "roboto";
+        }
+        div{
+            Display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        h1{
+            padding-left: 10px;
+            color: #21EB00;
+            margin-bottom: 5px;
+        }
+        h3{
+            padding-left: 10px;
+            color:#555;
+        }
+        input{
+            background-color: #191A18;
+            border-radius: 20px;
+            height: 50px;
+            width: 300px;
+            margin-bottom: 5px;
+            border-color: #191A18;
+            font: 18px roboto;
+        }
+
+        #data{
+            color: #555;
+        }
+        #send{
+            background-color: #21EB00;
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1>Contador</h1>
+        <h3>Informe uma data</h3>
+        <form action="">
+            <input type="date" id="data"><br>
+            <input type="submit" id="send" value="Enviar">
+          </form>
+    </div>
+   <script src="./js/cont.js" defer></script>
+</body>
+</html>
